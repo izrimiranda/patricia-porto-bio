@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import BackgroundSlideshow from './components/BackgroundSlideshow';
 import { EventType } from './types';
 
+import { SpotifyIcon } from './components/CustomIcons';
+
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -43,7 +45,7 @@ const App: React.FC = () => {
               <span className="text-sm font-medium">Instagram</span>
             </a>
             <a
-              href="mailto:contato@patriciaporto.com" // Update with real email
+              href="mailto:patriciaporto.contato@gmail.com" // Update with real email
               className="flex items-center gap-2 text-stone-600 hover:text-stone-900 transition-colors"
             >
               <Mail size={20} />
@@ -65,7 +67,7 @@ const App: React.FC = () => {
 
         <Button
           href="https://open.spotify.com/intl-pt/artist/0PmxWsaxll61rsUfOjlqBa"
-          icon={<Music size={20} />}
+          icon={<SpotifyIcon size={20} />}
         >
           Spotify
         </Button>
@@ -79,10 +81,11 @@ const App: React.FC = () => {
 
         <div className="w-full mt-2 rounded-xl overflow-hidden shadow-md border border-stone-200 bg-white">
           <iframe
+            data-testid="embed-iframe"
             style={{ borderRadius: "12px" }}
-            src="https://open.spotify.com/embed/artist/3TVXtAsR1Inumwj472S9r4?utm_source=generator&theme=0"
+            src="https://open.spotify.com/embed/artist/0PmxWsaxll61rsUfOjlqBa?utm_source=generator&theme=0"
             width="100%"
-            height="152"
+            height="352" // Updated height
             frameBorder="0"
             allowFullScreen
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
