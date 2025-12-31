@@ -34,7 +34,7 @@ const BackgroundSlideshow: React.FC = () => {
                 </div>
             ))}
             {/* Gradient Fade Overlay - Adjusted to be softer */}
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-nude-50 via-nude-50/70 to-transparent"></div>
+            <div className="absolute inset-x-0 bottom-0 h-32 md:h-48 bg-gradient-to-t from-nude-50 via-nude-50/70 to-transparent"></div>
         </div>
     );
 };

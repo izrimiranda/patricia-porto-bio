@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ children, onClick, href, icon, className = '' }) => {
-  const baseClasses = "w-full max-w-md bg-white border border-stone-100 shadow-sm hover:shadow-md hover:bg-gradient-to-r hover:from-nude-100 hover:to-white text-stone-700 font-medium py-4 px-6 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 group";
+  const baseClasses = "w-full max-w-md md:max-w-xl bg-white border border-stone-100 shadow-sm hover:shadow-md hover:bg-gradient-to-r hover:from-nude-100 hover:to-white text-stone-700 font-medium py-4 md:py-5 px-6 md:px-8 rounded-xl md:rounded-2xl transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 md:gap-4 md:text-lg group";
 
   if (href) {
     return (
